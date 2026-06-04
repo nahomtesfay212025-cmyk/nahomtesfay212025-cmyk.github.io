@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nahom Tesfay — Computer Science student at Alabama State University. Web Developer, Website Administrator, and AI & Software Engineering enthusiast." />
+  <meta name="author" content="Nahom Tesfay" />
+
+  <!-- Social sharing preview (shows when the link is shared) -->
+  <meta property="og:title" content="Nahom Tesfay — Web Developer & CS Student" />
+  <meta property="og:description" content="Building websites, software, and AI-powered solutions." />
+  <meta property="og:type" content="website" />
+
+  <title>Nahom Tesfay — Web Developer & CS Student</title>
+
+  <!-- A small emoji favicon (the icon in the browser tab) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+
+  <!-- Load a nice Google Font called "Inter" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Link to OUR stylesheet (the CSS file we build next) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Animated futuristic tech background — drawn by script.js -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVBAR (top menu) ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">NT<span>.</span></a>
+
+      <!-- Hamburger button shown only on phones -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO (big intro) ===== -->
+    <section class="hero" id="hero">
+
+      <!-- Decorative floating code snippets -->
+      <div class="code-float" aria-hidden="true">
+        <span style="top:16%; left:5%;">const dev = "Nahom";</span>
+        <span style="top:72%; left:9%;">def build(): return 🚀</span>
+        <span style="top:26%; right:7%;">while (learning) { grow(); }</span>
+        <span style="top:64%; right:5%;">git commit -m "ship it"</span>
+        <span style="top:46%; left:2%;">&lt;ai&gt; solutions &lt;/ai&gt;</span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow reveal">👋 Hi, my name is</p>
+          <h1 class="hero-name reveal">Nahom Tesfay</h1>
+          <h2 class="hero-tagline reveal">Computer Science Student at Alabama State University</h2>
+          <p class="hero-roles reveal">
+            Website Administrator <span>•</span> Web Developer <span>•</span> AI &amp; Software Engineering Enthusiast
+          </p>
+          <p class="hero-pitch reveal">Building websites, software, and AI-powered solutions.</p>
+          <div class="hero-buttons reveal">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <div class="photo-ring">
+            <img src="assets/nahom-trophy.jpg"
+                 alt="Nahom Tesfay receiving the 2nd Place Research Award trophy"
+                 onerror="this.style.display='none'; this.parentElement.classList.add('photo-fallback');" />
+            <span class="photo-tag">&lt;/ CS Student &gt;</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about">↓</a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am a <strong>Computer Science student at Alabama State University</strong> with a
+              strong interest in software engineering, web development, and artificial intelligence.
+            </p>
+            <p>
+              I enjoy building practical technology solutions, managing websites, and continuously
+              learning new technologies. My goal is to gain valuable industry experience through
+              internships and create impactful software products.
+            </p>
+            <ul class="about-facts">
+              <li><span>🎓</span> B.S. Computer Science</li>
+              <li><span>📊</span> 4.0 GPA</li>
+              <li><span>🏆</span> Presidential Scholar</li>
+              <li><span>🌐</span> Website Administrator</li>
+            </ul>
+          </div>
+          <aside class="about-card reveal">
+            <div class="about-avatar">NT</div>
+            <h3>Nahom Tesfay</h3>
+            <p>Alabama State University</p>
+            <p class="about-card-sub">Montgomery, Alabama</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">02.</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>💻 Programming</h3>
+            <div class="tags">
+              <span>Python</span><span>C++</span><span>C#</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>🛠️ Tools</h3>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>VS Code</span><span>WordPress</span><span>Wix</span><span>Claude Code</span><span>ChatGPT</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>🚀 Technologies</h3>
+            <div class="tags">
+              <span>APIs</span><span>Google Maps API</span><span>Web Development</span><span>Software Development</span><span>VR Systems</span><span>Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>🧠 Core Concepts</h3>
+            <div class="tags">
+              <span>Data Structures &amp; Algorithms</span><span>Problem Solving</span><span>UI/UX Design</span><span>Algorithmic Thinking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">03.</span> Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon">🎮</span>
+              <span class="project-badge">Coming Soon</span>
+            </div>
+            <h3>Trivia Multiplayer App</h3>
+            <p>A real-time multiplayer trivia game where players can compete with friends across many categories.</p>
+            <ul class="project-features">
+              <li>Real-time multiplayer gameplay</li>
+              <li>Friend invitation system</li>
+              <li>Scoring &amp; leaderboard features</li>
+              <li>Multiple categories &amp; question packs</li>
+            </ul>
+            <div class="tags">
+              <span>JavaScript</span><span>APIs</span><span>Real-time</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon">🌐</span>
+              <span class="project-badge badge-live">Live</span>
+            </div>
+            <h3>Personal Business Website</h3>
+            <p>Designed, built, and maintained a business website end to end, handling everything from domain to content.</p>
+            <ul class="project-features">
+              <li>Designed and maintained the website</li>
+              <li>Domain management and configuration</li>
+              <li>WordPress administration</li>
+              <li>Ongoing content management</li>
+            </ul>
+            <div class="tags">
+              <span>WordPress</span><span>Web Development</span><span>Domains</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon">🎓</span>
+              <span class="project-badge badge-live">Live</span>
+            </div>
+            <h3>W.E.B. Du Bois Honors Program Website</h3>
+            <p>Developed and currently manage the official website for a university honors program with multi-state activities.</p>
+            <ul class="project-features">
+              <li>Showcases academic programs &amp; leadership initiatives</li>
+              <li>Coordinates events, announcements &amp; student achievements</li>
+              <li>Consistent performance &amp; professional presentation</li>
+            </ul>
+            <a class="project-link" href="https://asu.web.honors.com" target="_blank" rel="noopener">Visit site ↗</a>
+            <div class="tags">
+              <span>Web Development</span><span>WordPress</span><span>UI/UX</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon">🏠</span>
+              <span class="project-badge badge-live">Live</span>
+            </div>
+            <h3>Residential Care Website</h3>
+            <p>Designed and deployed a production-level website for a residential care organization, used for real-world client engagement.</p>
+            <ul class="project-features">
+              <li>Responsive layouts &amp; structured navigation</li>
+              <li>Contact systems with integrated Google Maps</li>
+              <li>Clean, accessible UI design</li>
+            </ul>
+            <a class="project-link" href="https://mekonateyresidentialhomes.com" target="_blank" rel="noopener">Visit site ↗</a>
+            <div class="tags">
+              <span>Responsive Design</span><span>Google Maps API</span><span>UI/UX</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">04.</span> Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <h3>Website Administrator <span class="timeline-date">Aug 2025 – Present</span></h3>
+            <p class="timeline-org">The Hornet Tribune · <a href="https://asuhornettribune.com" target="_blank" rel="noopener">asuhornettribune.com</a></p>
+            <ul class="timeline-points">
+              <li>Manage a high-traffic digital newspaper platform reaching 10,000+ students, alumni, and faculty</li>
+              <li>Publish and manage multimedia content serving 500+ users monthly</li>
+              <li>Collaborate with editorial teams and improved usability and layout consistency</li>
+              <li>Support the oldest student-run Black college newspaper in the United States</li>
+            </ul>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <h3>Website Administrator <span class="timeline-date">Jan 2024 – Present</span></h3>
+            <p class="timeline-org">Freelance / Independent · Montgomery, AL &amp; Salem, OR</p>
+            <ul class="timeline-points">
+              <li>Manage multiple live websites for organizations and university programs</li>
+              <li>Design page layouts, navigation systems, and content structures</li>
+              <li>Optimize performance, responsiveness, and accessibility across devices</li>
+              <li>Maintain consistent branding and reliable, up-to-date content delivery</li>
+            </ul>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <h3>Website Administrator</h3>
+            <p class="timeline-org">W.E.B. Du Bois Honors Program</p>
+            <p>Managing and maintaining the program's website, content, and online presence.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <h3>Website Administrator</h3>
+            <p class="timeline-org">Mekonatey 24 Hours Residential</p>
+            <p>Administering the organization's website and keeping content current and accessible.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <h3>Digital &amp; Interactive Media</h3>
+            <p class="timeline-org">The Hornet Tribune</p>
+            <p>Contributing to digital and interactive media projects for the university newspaper.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">05.</span> Research &amp; Achievements</h2>
+
+        <!-- Featured achievement spotlight -->
+        <div class="spotlight reveal">
+          <div class="spotlight-photo">
+            <img src="assets/nahom-trophy.jpg"
+                 alt="Nahom Tesfay receiving the 2nd Place Research Award at the 3rd Annual Honors Conference"
+                 onerror="this.style.display='none'; this.parentElement.classList.add('photo-fallback');" />
+            <span class="spotlight-badge">🥈 2nd Place</span>
+          </div>
+          <div class="spotlight-text">
+            <h3>2nd Place Research Award</h3>
+            <p class="spotlight-sub">3rd Annual Honors Conference 2026 · Global Leadership Initiative · W.E.B. Du Bois Honors Program</p>
+            <p>
+              I presented original research at Alabama State University's 3rd Annual Honors Conference,
+              <em>"Innovative Intersections: Leveraging Multidisciplinary Approaches for Environmental
+              and Social Justice,"</em> earning <strong>2nd Place</strong> among a competitive field of
+              honors scholars.
+            </p>
+            <ul class="spotlight-points">
+              <li>Conducted and presented multidisciplinary academic research</li>
+              <li>Recognized for excellence in scholarship and presentation</li>
+              <li>Active member of the W.E.B. Du Bois Honors Program &amp; Global Leadership Initiative</li>
+              <li>Demonstrates a drive for research, technology, and leadership</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement reveal">
+            <span class="achievement-icon">🥈</span>
+            <h3>2nd Place Research Award</h3>
+            <p>3rd Annual Honors Conference 2026</p>
+          </div>
+          <div class="achievement reveal">
+            <span class="achievement-icon">⭐</span>
+            <h3>Presidential Scholar</h3>
+            <p>Awarded for outstanding academic achievement</p>
+          </div>
+          <div class="achievement reveal">
+            <span class="achievement-icon">📊</span>
+            <h3>4.0 GPA</h3>
+            <p>Perfect academic standing</p>
+          </div>
+          <div class="achievement reveal">
+            <span class="achievement-icon">🔬</span>
+            <h3>STEM Programs</h3>
+            <p>Active participation in STEM &amp; technology programs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">06.</span> Education</h2>
+        <div class="edu-card reveal">
+          <div class="edu-head">
+            <div>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p class="edu-org">Alabama State University · Montgomery, AL</p>
+            </div>
+            <span class="edu-date">Expected Dec 2028</span>
+          </div>
+          <ul class="edu-points">
+            <li><strong>GPA:</strong> 4.0</li>
+            <li><strong>Honors:</strong> Academic Presidential Scholarship · W.E.B. Du Bois Honors Scholar</li>
+            <li><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Web Development</li>
+            <li><strong>CodePath Technical Interview Prep:</strong> solved LeetCode-style problems in Python under timed conditions</li>
+            <li><strong>Near-perfect SAT Math score</strong> — strong quantitative &amp; problem-solving skills</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title center reveal"><span class="section-num">07.</span> Get In Touch</h2>
+        <p class="contact-lead reveal">
+          I'm currently looking for internship opportunities. Whether you have a question or just
+          want to say hi, my inbox is always open!
+        </p>
+
+        <a href="mailto:nahomtesfay212025@gmail.com" class="btn btn-primary reveal">Say Hello 👋</a>
+
+        <div class="contact-links reveal">
+          <a href="mailto:nahomtesfay212025@gmail.com" aria-label="Email">✉️ Email</a>
+          <a href="https://www.linkedin.com/in/nahom-tesfay-54b83a37a" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
+          <a href="https://github.com/nahomtesfay212025-cmyk" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener" aria-label="Resume">📄 Resume</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Nahom Tesfay</strong></p>
+      <p class="footer-sub">© <span id="year"></span> · Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Link to OUR JavaScript file (loaded last so the page appears fast) -->
+  <script src="js/script.js"></script>
+</body>
+</html>

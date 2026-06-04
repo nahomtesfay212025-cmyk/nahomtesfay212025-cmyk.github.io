@@ -368,3 +368,13 @@ main, .footer { position: relative; z-index: 2; }
 .edu-points li { color: var(--muted); padding-left: 24px; position: relative; margin-bottom: 10px; }
 .edu-points li::before { content: "✦"; position: absolute; left: 0; color: var(--brand); }
 .edu-points strong { color: var(--text); }
+
+/* ---------- ADD-ON 4: readability overlay over the 3D background ---------- */
+/* Sits between the 3D canvas (z 0) and the content (z 2). Keeps text readable
+   while still letting the animated scene show through — brighter near the hero. */
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(1200px circle at 50% 28%,
+              rgba(11,17,32,.06) 0%, rgba(11,17,32,.34) 70%, rgba(11,17,32,.52) 100%);
+}

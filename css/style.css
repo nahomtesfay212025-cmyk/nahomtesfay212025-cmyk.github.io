@@ -136,7 +136,7 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   padding: 36px 28px; text-align: center; box-shadow: var(--shadow);
 }
 .about-photo {
-  width: 144px; height: 72px; object-fit: cover; object-position: top;
+  width: 144px; height: 72px; object-fit: contain; object-position: center;
   border-radius: var(--radius); margin: 0 auto 18px; display: block;
 }
 .about-card h3 { font-size: 1.3rem; }
